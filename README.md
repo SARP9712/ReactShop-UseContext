@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# React Shop con useContext
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+Este proyecto es una tienda en línea básica desarrollada con React, que utiliza el hook `useContext` junto con `useReducer` para manejar el estado global del carrito de compras. Permite agregar productos al carrito, modificar cantidades, eliminar productos y limpiar el carrito. Además, incluye notificaciones visuales con `react-hot-toast`.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Características
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Mostrar listado de productos con imágenes, descripción y precio.
+- Añadir productos al carrito.
+- Incrementar y decrementar la cantidad de productos en el carrito.
+- Eliminar productos del carrito.
+- Mostrar total del carrito.
+- Notificaciones con toast al agregar productos.
+- Gestión global del estado usando Context API y useReducer.
+- Preloader durante la carga de productos.
+- Diseño responsive y moderno con Tailwind CSS.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clonar el repositorio
 
-### `npm run build`
+```bash
+git clone https://github.com/tuusuario/tu-repo.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Estructura del Proyecto 
+/src
+  /components
+    Navbar.jsx
+    Cart.jsx
+    ProductCard.jsx
+    ProductsPage.jsx
+  /context
+    CartContext.jsx
+  /hooks
+    useProducts.jsx
+  /assets
+    shop.png
+  /Data
+    products.js  
+  App.jsx
+  index.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ## Explicación técnica
 
-### `npm run eject`
+- **CartContext.jsx**: Define el contexto del carrito y la lógica para manipular el estado usando un reducer.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **useProducts.jsx**: Hook personalizado para simular la obtención de productos (podría ser reemplazado por una API real).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **ProductCard.jsx**: Componente que muestra cada producto y permite agregarlo al carrito.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Navbar.jsx**: Barra de navegación que incluye el botón para mostrar u ocultar el carrito.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Cart.jsx**: Muestra los productos añadidos y permite modificar cantidades o eliminarlos.
 
-## Learn More
+## Tecnologías usadas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React.js (hooks: useContext, useReducer, useEffect)  
+- Tailwind CSS  
+- React Hot Toast para notificaciones  
+- JavaScript (ES6+)
