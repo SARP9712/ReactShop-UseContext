@@ -16,7 +16,7 @@ Este proyecto es una tienda en línea básica desarrollada con React, que utiliz
 - Notificaciones con toast al agregar productos.
 - Gestión global del estado usando Context API y useReducer.
 - Preloader durante la carga de productos.
-- Diseño responsive y moderno con Tailwind CSS.
+- Diseño moderno con Tailwind CSS.
 
 ---
 
