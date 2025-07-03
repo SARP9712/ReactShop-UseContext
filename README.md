@@ -25,7 +25,7 @@ Este proyecto es una tienda en línea básica desarrollada con React, que utiliz
 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tuusuario/tu-repo.git
+git clone [https://github.com/tuusuario/tu-repo.git](https://github.com/SARP9712/ReactShop-UseContext.git)
 
 
 ## Estructura del Proyecto 
